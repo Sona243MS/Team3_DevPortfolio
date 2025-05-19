@@ -1,22 +1,164 @@
-<div class="auth-buttons"
-	<a href="login.html"class="btn login-btn">Login</a>
-	<a href="signup.html"class="btn signup-btn">SignUp</a>
-</div>
-</div>
-</header>
-
-<!-- Hero Section -->
-<section id ="home" class ="hero">
-	<div class ="container">
-
-
-		<h2>Hi, I'm DevPortfolio - Turning ideas into impactful experiences—one pixel, line of code, or brushstroke at a time."</h2>
-
-		<p>
-		DevPortfolio is a platform designed to help developers, designers, and tech professionals create stunning, personalized portfolios with ease. Whether you're a front-end developer, UX designer, data scientist, or full-stack engineer, DevPortfolio provides the tools, templates, and guidance to showcase your skills, projects, and personality in a professional yet 
-		unique way.
-		</p>
-	</div>
-</section>
-
+ .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+    }
+    
+    .nav-links a:hover {
+      background-color: rgba(255,255,255,0.2);
+      transform: translateY(-2px);
+    }
+    
+    .auth-buttons {
+      display: flex;
+      gap: 1rem;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+    
+    .login-btn {
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+    
+    .login-btn:hover {
+      background-color: white;
+      color: var(--primary);
+    }
+    
+    .signup-btn {
+      background-color: var(--accent);
+      color: white;
+      border: 2px solid var(--accent);
+    }
+    
+    .signup-btn:hover {
+      background-color: #e04f6d;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(255, 101, 132, 0.3);
+    }
+    
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
+                  url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 5rem 0;
+      text-align: center;
+      position: relative;
+    }
+    
+    .hero h2 {
+      font-size: 2.5rem;
+      color: var(--secondary);
+      margin-bottom: 1.5rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    }
+    
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      color: var(--dark);
+      background-color: rgba(255,255,255,0.8);
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    
+    /* About Section */
+    .about {
+      padding: 4rem 0;
+      background-color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .about::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background: linear-gradient(90deg, var(--primary), var(--accent), var(--success), var(--info), var(--primary));
+    }
+    
+    .about h2 {
+      font-size: 2.2rem;
+      color: var(--primary);
+      margin-bottom: 2rem;
+      text-align: center;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+    
+    .about h2::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      border-radius: 2px;
+    }
+    
+    .about p {
+      margin-bottom: 1.5rem;
+      padding: 1.5rem;
+      border-left: 4px solid var(--primary);
+      background-color: rgba(108, 99, 255, 0.05);
+      border-radius: 0 8px 8px 0;
+      transition: all 0.3s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: relative;
+      padding-left: 3rem;
+    }
+    
+    .about p:hover {
+      background-color: rgba(108, 99, 255, 0.1);
+      transform: translateX(5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    
+    .about p::before {
+      content: "";
+      position: absolute;
+      left: 1rem;
+      top: 1.5rem;
+      width: 24px;
+      height: 24px;
+      background-color: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+    }
+    
+    .about p:nth-child(2)::before { content: "\f1c9"; } /* Templates */
+    .about p:nth-child(3)::before { content: "\f542"; } /* Project Showcase */
+    .about p:nth-child(4)::before { content: "\f121"; } /* Developer Features */
+    .about p:nth-child(5)::before { content: "\f233"; } /* Hosting */
+    .about p:nth-child(6)::before { content: "\f0c0"; } /* Community */
+    .about p:nth-child(7)::before { content: "\f135"; } /* Get Started */
+    .about p:nth-child(8)::before { content: "\f06d"; } /* Bonus */
+    
 
