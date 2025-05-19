@@ -1,24 +1,28 @@
 
-<body>
-  <!-- Navigation -->
-  <header>
-    <div class="container nav-container">
-      <h1 class="logo">DevPortfolio</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-	  <li><a href="#projects">Projects</a></li>
-	  <li><a href="#skills">Skills</a></li>
-
-	  <!-- Additional Items -->
-	  <li><a href="#bolg">Blog</a></li>
-	  <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-	<!-- Mobile Menu Button -->
-	<button class="mobile-menu btn">Mobile-Menu ☰</button>
-      </nav>
-    </div>
+    /* Navigation */
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 1rem 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      background: linear-gradient(to right, #FF6584, #6C63FF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
 
 
