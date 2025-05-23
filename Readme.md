@@ -1,6 +1,7 @@
 DevPortfolio is a professional portfolio platform designed for developers, designers, and tech professionals to showcase their skills, projects, and achievements. This repository contains the homepage and template page built with HTML, CSS, and Font Awesome icons for a modern, responsive design.
 
-🚀 Features
+ Features:
+
 🏠 Homepage (index.html)
 ✔ Hero Section – Engaging introduction with a motivational tagline.
 ✔ About Section – Highlights key features in a structured format.
@@ -20,4 +21,14 @@ CSS3 – Styling, animations, and responsive design.
 Font Awesome – Icons for better UI/UX.
 
 Git & GitHub – Version control and collaboration.
+
+📂 Project Structure
+
+devportfolio/
+├── index.html            # Homepage
+├── templates.html        # Template Page
+├── style.css             # Main CSS file
+├── assets/               # Images/icons (if any)
+└── README.md             # Project documentation
+
 
